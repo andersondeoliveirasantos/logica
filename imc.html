@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Calculo do IMC !!!</h1>
-    <p>Esse programa, calcula de forma rápida o seu IMC</p>
+    <p>Esse programa, calcula de forma rápida o seu IMC.</p>
     <script>
       function pularLinha() {
         document.write('<br>')
@@ -19,6 +19,11 @@
         document.write(frase)
         pularLinha()
       }
+
+      var pesoAnderson = 92
+      var alturaAnderson = 1.86
+      var imcAnderson = pesoAnderson / (alturaAnderson * alturaAnderson)
+      mostra('O IMC do Anderson é ' + imcAnderson)
     </script>
   </body>
 </html>
