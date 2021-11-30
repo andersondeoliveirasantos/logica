@@ -12,42 +12,27 @@
       Esse programa, calcula de forma rápida o seu IMC, de forma rápida e clara.
     </p>
     <p>Assim, você vai saber se está acima ou abaixo do peso normal.</p>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, nulla?
-      Quibusdam saepe doloribus nesciunt! Reiciendis ducimus numquam quos labore
-      saepe est necessitatibus suscipit. Incidunt tempore non, quia ducimus
-      magnam ipsum.
+      <script>
+        function pularLinha() {
+          document.write('<br>')
+          document.write('<br>')
+        }
+
+        function mostra(frase) {
+          document.write(frase)
+          pularLinha()
+        }
+
+        function calculaImc(altura, peso) {
+          var imc = peso / (altura * altura)
+          mostra('O IMC calculado é ' + imc)
+        }
+
+        calculaImc(1.86, 92)
+        calculaImc(1.72, 68)
+
+        pularLinha
+      </script>
     </p>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quaerat
-      qui aut iusto tempore dignissimos quia corrupti impedit, est blanditiis
-      alias vitae vero architecto deleniti voluptates ut accusantium quis non.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus,
-      reprehenderit. Commodi quo nisi odio vitae iste, saepe qui enim a libero
-      atque porro tenetur soluta, illo quae, odit ab totam.
-    </p>
-    <script>
-      function pularLinha() {
-        document.write('<br>')
-        document.write('<br>')
-      }
-
-      function mostra(frase) {
-        document.write(frase)
-        pularLinha()
-      }
-
-      function calculaImc(altura, peso) {
-        var imc = peso / (altura * altura)
-        mostra('O IMC calculado é ' + imc)
-      }
-
-      calculaImc(1.86, 92)
-      calculaImc(1.72, 68)
-
-      pularLinha
-    </script>
   </body>
 </html>
