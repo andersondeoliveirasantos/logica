@@ -24,15 +24,15 @@
         }
 
         function calculaImc(altura, peso) {
-          var imc = peso / (altura * altura) + 1
-          return imc;
+          
+          return peso / (altura * altura);
         }
 
         var imcFlavio = calculaImc(1.71, 73);
         var imcAmigo = calculaImc(172, 68);
+        var totalImc = imcFlavio + imcAmigo;
 
-        mostra(imcFlavio)
-        mostra(imcAmigo)
+        document.write('A soma dos IMCs é ' + totalImc);
 
       </script>
     </p>
