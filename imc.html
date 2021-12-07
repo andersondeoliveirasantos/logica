@@ -36,7 +36,19 @@
         var imc = calculaImc(alturaInformada, pesoInformado);
 
         document.write(nome + ', o seu IMC é ' + imc);
-        document.write('Seu IMC foi calculado.');
+
+        pularLinha;
+        pularLinha;
+            
+        document.write('Seu IMC foi calculado de acordo com os seus dados informados.');
+
+        if(imc < 18.5) {
+          mostra('Você está abaixo do seu peso ideal recomendado.')
+        }
+
+        if(imc > 35) {
+          mostra('Você está acima do seu peso ideal recomendado')
+        }
 
       </script>
     </p>
