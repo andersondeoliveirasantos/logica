@@ -16,17 +16,17 @@
 
       function mostra(frase) {
         document.write(frase)
-        pulaLinha
+        pulaLinha()
       }
 
       var anoCopa = 1930
 
-      while (true) {
-        alert('Teve Copa em ' + anoCopa)
+      while (anoCopa <= 2022) {
+        mostra('Teve Copa em ' + anoCopa)
         anoCopa = anoCopa + 4
       }
 
-      alert('FIM')
+      mostra('FIM')
     </script>
   </body>
 </html>
