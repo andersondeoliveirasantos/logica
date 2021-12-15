@@ -12,7 +12,6 @@
     <script>
       function pulaLinha() {
         document.write('<br>')
-        document.write('<br>')
       }
 
       function mostra(frase) {
@@ -20,9 +19,11 @@
         pulaLinha()
       }
 
-      for(var linha = 1; linha <= 3; linha++) \[
-        mostra('**********')
-      ]
+      for (var linha = 1; linha <= 3; linha++) {
+        for (var coluna = 1; coluna < 10; coluna++) {
+          document.write('*')
+        }
+      }
     </script>
   </body>
 </html>
