@@ -13,10 +13,13 @@
     <script>
       var segredo = 5
       var input = document.querySelector('input')
-      if (input.value == segredo) {
-        alert('Você ACERTOU o meu segredo !!!')
-      } else {
-        alert('Você ERROU !!!')
+
+      function verifica() {
+        if (input.value == segredo) {
+          alert('Você ACERTOU o meu segredo !!!')
+        } else {
+          alert('Você ERROU !!!')
+        }
       }
     </script>
   </body>
